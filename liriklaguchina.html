@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jumping Machine - LBI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar h2 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .search-box input {
+      padding: 6px 10px;
+      font-size: 0.9em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 180px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 160px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 10px;
+    }
+
+    h1 {
+      font-size: 1.6em;
+      margin: 0;
+    }
+
+    .subjudul {
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .lirik-container {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 15px 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      margin: 20px 0 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #444;
+    }
+
+    .baris {
+      margin-bottom: 10px;
+    }
+
+    .mandarin {
+      font-weight: bold;
+    }
+
+    .pinyin {
+      font-style: italic;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    .indonesia {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #aaa;
+      margin-top: 30px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>🏠 Home</h2>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari lirik...">
+    </div>
+  </div>
+
+  <header>
+    <h1>Jumping Machine</h1>
+    <div class="subjudul">LBI 利比 • 跳楼机</div>
+    <img src="Jumping Machine (跳楼机) - EP của LBI利比 trên Apple….jpeg" alt="LBI Image" />
+  </header>
+
+  <div class="lirik-container" id="lirikContainer">
+
+    <div class="section-title">Verse 1</div>
+    <div class="baris">
+      <div class="mandarin">风走了 只留下一条街的叶落</div>
+      <div class="pinyin">Fēng zǒu le zhī liú xià yī tiáo jiē de yè luò</div>
+      <div class="indonesia">Angin pergi, hanya menyisakan daun-daun di jalan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你走了 只留下我双眼的红</div>
+      <div class="pinyin">Nǐ zǒu le zhī liú xià wǒ shuāng yǎn de hóng</div>
+      <div class="indonesia">Kau pergi, hanya tinggalkan merah di mataku</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">逼着自己早点睡</div>
+      <div class="pinyin">Bī zhe zì jǐ zǎo diǎn shuì</div>
+      <div class="indonesia">Memaksa diri tidur lebih awal</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">能不能再做一个有你的美梦</div>
+      <div class="pinyin">Néng bù néng zài zuò yī gè yǒu nǐ de měi mèng</div>
+      <div class="indonesia">Bisakah aku bermimpi lagi tentangmu?</div>
+    </div>
+
+    <div class="section-title">Pre-Chorus</div>
+    <div class="baris">
+      <div class="mandarin">我好像一束极光</div>
+      <div class="pinyin">Wǒ hǎoxiàng yī shù jí guāng</div>
+      <div class="indonesia">Aku seolah aurora</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">守在遥远的世界尽头</div>
+      <div class="pinyin">Shǒu zài yáoyuǎn de shìjiè jìntóu</div>
+      <div class="indonesia">Menjaga di ujung dunia yang jauh</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">看过了你的眼眸 才知道孤独很难忍受</div>
+      <div class="pinyin">Kàn guòle nǐ de yǎnmóu cái zhīdào gūdú hěn nán rěnshòu</div>
+      <div class="indonesia">Melihat matamu, barulah kutahu kesepian itu sulit</div>
+    </div>
+
+
+    <div class="section-title">Verse 2</div>
+    <div class="baris">
+      <div class="mandarin">可笑吗</div>
+      <div class="pinyin">Kěxiào ma</div>
+      <div class="indonesia">Apakah ini konyol?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">我删访问记录的时候有多慌张</div>
+      <div class="pinyin">Wǒ shān fǎngwèn jìlù de shíhòu yǒu duō huāngzhāng</div>
+      <div class="indonesia">Betapa paniknya aku saat menghapus riwayat penelusuran</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">他会看见吗 曾经只有我能看的模样</div>
+      <div class="pinyin">Tā huì kànjiàn ma céngjīng zhǐ yǒu wǒ néng kàn de múyàng</div>
+      <div class="indonesia">Apakah dia akan melihatnya? Wajah yang dulu hanya aku lihat</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">从夜深人静 一直难过到天亮</div>
+      <div class="pinyin">Cóng yè shēn rén jìng yīzhí nánguò dào tiān liàng</div>
+      <div class="indonesia">Dari larut malam sampai fajar, hatiku sedih</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你反正不会再担心</div>
+      <div class="pinyin">Nǐ fǎnzhèng bú huì zài dānxīn</div>
+      <div class="indonesia">Kau tak akan khawatir lagi</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">我隐隐作疼的心脏</div>
+      <div class="pinyin">Wǒ yǐnyǐn zuò téng de xīnzàng</div>
+      <div class="indonesia">Hatiku terasa nyer</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">好像遇到我 你才对自由向往</div>
+      <div class="pinyin">Hǎoxiàng yù dào wǒ nǐ cái duì zìyóu xiàngwǎng</div>
+      <div class="indonesia">Sepertinya setelah bertemu denganku, kau baru merindukan kebebasan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">怎么为他 失去一切也无妨</div>
+      <div class="pinyin">Zěnme wéi tā shīqù yīqiè yě wúfáng</div>
+      <div class="indonesia">Kenapa kehilangan segalanya pun kau lakukan untuk dia?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">可能是我贱吧</div>
+      <div class="pinyin">Kěnéng shì wǒ jiàn ba</div>
+      <div class="indonesia">Mungkin akulah yang lemah</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">不爱我的非要上 那么硬的南墙非要撞</div>
+      <div class="pinyin">Bù ài wǒ de fēi yào shàng nàme yìng de nánqiáng fēi yào zhuàng</div>
+      <div class="indonesia">Memaksaku mengejar yang tak mencintaiku, terus membentur tembok keras</div>
+    </div>   
+    <div class="baris">
+      <div class="mandarin">是不是内心希望 头破血流就会让你想起最爱我的时光</div>
+      <div class="pinyin">Shì bú shì nèixīn xīwàng... zuì ài wǒ de shíguāng</div>
+      <div class="indonesia">Apa kau harap dengan luka ini, kau teringat saat kau mencintaiku?</div>
+
+
+    <div class="section-title">Chorus</div>
+    <div class="baris">
+      <div class="mandarin">Baby 我们的感情好像跳楼机</div>
+      <div class="pinyin">Baby wǒmen de gǎnqíng hǎoxiàng tiàolóu j</div>
+      <div class="indonesia">Baby, cinta kita seperti wahana drop tower</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">让我突然地升空又急速落地</div>
+      <div class="pinyin">Ràng wǒ túrán de shēngkōng yòu jísù luòdì</div>
+      <div class="indonesia">Membuatku tiba-tiba melambung tinggi lalu jatuh cepat</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你带给我一场疯狂</div>
+      <div class="pinyin">Nǐ dài gěi wǒ yī chǎng fēngkuáng</div>
+      <div class="indonesia">Kau bawa kegilaan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">劫后余生 好难呼吸</div>
+      <div class="pinyin">Jié hòu yúshēng hǎo nán hūxī</div>
+      <div class="indonesia">Sulit bernapas setelah lolos dari semua ini</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">那天的天气难得放晴</div>
+      <div class="pinyin">Nà tiān de tiānqì nánde fàng qíngī</div>
+      <div class="indonesia">Hari itu, cuacanya akhirnya cerah</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你说的话却把我困在雨季</div>
+      <div class="pinyin">Nǐ shuō de huà què bǎ wǒ kùn zài yǔjì</div>
+      <div class="indonesia">Tapi kata-katamu membuatku terjebak di musim hujan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">其实你不是不爱了吧</div>
+      <div class="pinyin">Qíshí nǐ bú shì bú ài le ba</div>
+      <div class="indonesia">Sebenarnya, bukankah kamu masih mencintaiku?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">只是有些摩擦没处理</div>
+      <div class="pinyin">Zhǐshì yǒu xiē mócā méi chǔlǐ</div>
+      <div class="indonesia">Hanya ada beberapa gesekan yang belum diselesaikan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">怎么你闭口不语</div>
+      <div class="pinyin">Zěnme nǐ bì kǒu bù yǔ</div>
+      <div class="indonesia">Mengapa kau malah terdiam?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">是不是我正好说中你的心</div>
+      <div class="pinyin">Shì bú shì wǒ zhènghǎo shuō zhōng nǐ de xīn</div>
+      <div class="indonesia">Apakah aku kebetulan menyentuh isi hatimu?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">就承认还是在意吧</div>
+      <div class="pinyin">Jiù chéngrèn hái shì zàiyì ba</div>
+      <div class="indonesia">Akui saja bahwa kau masih peduli</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">就骗骗我也可以</div>
+      <div class="pinyin">Jiù piàn piàn wǒ yě kěyǐ</div>
+      <div class="indonesia">Bahkan jika kau harus membohongiku, tidak apa-apa</div>
+    </div>
+
+
+    <div class="section-title">Prechorus</div>
+    <div class="baris">
+      <div class="mandarin">可笑吗？你的出现是我不能规避的伤</div>
+      <div class="pinyin">Kěxiào ma? Nǐ de chūxiàn shì wǒ bùnéng guībì de shāng</div>
+      <div class="indonesia">Apakah ini konyol? Kehadiranmu adalah luka yang tak bisa kuhindari</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">怎么能接受这荒唐</div>
+      <div class="pinyin">Zěnme néng jiēshòu zhè huāngtáng</div>
+      <div class="indonesia">Bagaimana bisa kau terima absurditas ini?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">可能是我贱吧 不爱我的非要上 那么硬的南墙非要撞</div>
+      <div class="pinyin">Kěnéng shì wǒ jiàn ba... nàme yìng de nánqiáng fēi yào zhuàng</div>
+      <div class="indonesia">Mungkin aku lemah, tetap mengejar yang tak mencintaiku...</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">是不是内心希望 头破血流就会让你想起最爱我的时光</div>
+      <div class="pinyin">Shì bú shì nèixīn xīwàng... zuì ài wǒ de shíguāng</div>
+      <div class="indonesia">Apakah kau harap aku terluka agar kau ingat cintamu padaku?</div>
+    </div>
+
+
+        <div class="section-title">Chorus</div>
+    <div class="baris">
+      <div class="mandarin">Baby 我们的感情好像跳楼机</div>
+      <div class="pinyin">Baby wǒmen de gǎnqíng hǎoxiàng tiàolóu j</div>
+      <div class="indonesia">Baby, cinta kita seperti wahana drop tower</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">让我突然地升空又急速落地</div>
+      <div class="pinyin">Ràng wǒ túrán de shēngkōng yòu jísù luòdì</div>
+      <div class="indonesia">Membuatku tiba-tiba melambung tinggi lalu jatuh cepat</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你带给我一场疯狂</div>
+      <div class="pinyin">Nǐ dài gěi wǒ yī chǎng fēngkuáng</div>
+      <div class="indonesia">Kau bawa kegilaan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">劫后余生 好难呼吸</div>
+      <div class="pinyin">Jié hòu yúshēng hǎo nán hūxī</div>
+      <div class="indonesia">Sulit bernapas setelah lolos dari semua ini</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">那天的天气难得放晴</div>
+      <div class="pinyin">Nà tiān de tiānqì nánde fàng qíngī</div>
+      <div class="indonesia">Hari itu, cuacanya akhirnya cerah</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">你说的话却把我困在雨季</div>
+      <div class="pinyin">Nǐ shuō de huà què bǎ wǒ kùn zài yǔjì</div>
+      <div class="indonesia">Tapi kata-katamu membuatku terjebak di musim hujan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">其实你不是不爱了吧</div>
+      <div class="pinyin">Qíshí nǐ bú shì bú ài le ba</div>
+      <div class="indonesia">Sebenarnya, bukankah kamu masih mencintaiku?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">只是有些摩擦没处理</div>
+      <div class="pinyin">Zhǐshì yǒu xiē mócā méi chǔlǐ</div>
+      <div class="indonesia">Hanya ada beberapa gesekan yang belum diselesaikan</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">怎么你闭口不语</div>
+      <div class="pinyin">Zěnme nǐ bì kǒu bù yǔ</div>
+      <div class="indonesia">Mengapa kau malah terdiam?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">是不是我正好说中你的心</div>
+      <div class="pinyin">Shì bú shì wǒ zhènghǎo shuō zhōng nǐ de xīn</div>
+      <div class="indonesia">Apakah aku kebetulan menyentuh isi hatimu?</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">就承认还是在意吧</div>
+      <div class="pinyin">Jiù chéngrèn hái shì zàiyì ba</div>
+      <div class="indonesia">Akui saja bahwa kau masih peduli</div>
+    </div>
+    <div class="baris">
+      <div class="mandarin">就骗骗我也可以</div>
+      <div class="pinyin">Jiù piàn piàn wǒ yě kěyǐ</div>
+      <div class="indonesia">Bahkan jika kau harus membohongiku, tidak apa-apa</div>
+    </div>
+
+
+    <div class="section-title">Outro</div>
+    <div class="baris">
+      <div class="mandarin">哪怕骗骗我也可以</div>
+      <div class="pinyin">Nǎpà piàn piàn wǒ yě kěyǐ</div>
+      <div class="indonesia">Bahkan jika harus berbohong padaku, tidak apa-apa</div>
+    </div>
+
+    <!-- Tambahkan baris tambahan jika diinginkan -->
+
+  </div>
+
+  <footer>&copy; 2025 LirikLBI. All rights reserved.</footer>
+
+  <script>
+    const input = document.getElementById("searchInput");
+    const container = document.getElementById("lirikContainer");
+
+    input.addEventListener("input", function () {
+      const keyword = input.value.toLowerCase();
+      const bars = container.querySelectorAll(".baris");
+
+      bars.forEach(bar => {
+        const text = bar.innerText.toLowerCase();
+        bar.style.display = text.includes(keyword) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
